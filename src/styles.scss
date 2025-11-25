@@ -2,3 +2,80 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+:root {
+    --navbar-height: 4rem;
+    --line-spacer: 0.5rem;
+    --navbar-color: white;
+    --second-navbar-color: white;
+
+    --blue-button-color: rgb(30, 144, 255);
+    --landing-main-color: rgba(59, 130, 246, .5);
+    --landing-main-color-fade: rgba(59, 131, 246, 0.278);
+    --landing-background-color-gray-fade: rgba(249, 250, 251,  0.7);
+    --landing-font-color-fade: rgba(107, 114, 128, 1);
+    --border-color: rgb(248, 186, 0);
+    --small-container-border-radius: 0.5rem;
+    --font-hover-color: rgba(35, 107, 222, 0.788);
+    --main-button-color: black;
+    --secondary-button-color: #2c3687;
+    --button-main-color: #3e546d;
+    --widgetContainer-general-gap: 1.5rem;
+    --customBar-border-radius: 5px;
+    --customBar-color-green: rgba(20, 158, 71, 0.7);
+    --customBar-color-yellow: rgb(245, 158, 11, 0.7);
+    --customBar-color-red: rgba(239, 68, 68, 0.796);
+    --customBar-font-color-green: rgba(20, 158, 71, 1);
+    --customBar-font-color-yellow: rgba(245, 158, 11, 1);
+    --customBar-font-color-red: rgba(239, 68, 68, 1);
+
+    --yellow-main-color: rgb(158, 73, 8);
+    --yellow-fade-color: rgba(180, 83, 9, 0.85);
+    --yellow-background-color: rgb(255 251 235 /  1);
+    --yellow-border-color: rgb(255 208 19);
+    // --yellow-fade-color: rgba(236, 193, 20, 0.967);
+    --lightBlue-background-color: rgb(239 246 255);
+    --lightBlue-border-color: rgb(191 219 254);
+
+    --filter-bar-color: white;
+
+    --bg-color: #f5f5f5;
+    --wdg-color: #ffffff;
+
+    --third-button-color: #6c90df;
+
+    --font-color: rgb(50, 54, 61);
+    --font-color-dark: rgb(37, 40, 44);
+    --font-color-light: rgb(118, 125, 141);
+    --second-font-color: #2c3687;
+    --light-font-color: whitesmoke;
+    --header-filter-font-color: #CA6702;
+
+    --selections-color: #fff;
+    --selections-border-color: #f5f5f5;
+    --reset-button-color: #25678C;
+    --checkbox: #24688c;
+    --checkbox-trans: rgb(35 105 140 / 52%);
+}
+
+table.mat-mdc-table {
+  background-color: #ffffff !important;
+}
+
+.mdc-data-table__row,
+.mdc-data-table__header-row,
+.mdc-data-table__cell,
+.mdc-data-table__header-cell {
+  background-color: #ffffff !important;
+}
+
+.mat-mdc-paginator {
+  background-color: #ffffff !important;
+}
+
+.mat-mdc-paginator-outer-container,
+.mat-mdc-paginator-container {
+  background-color: #ffffff !important;
+}
+

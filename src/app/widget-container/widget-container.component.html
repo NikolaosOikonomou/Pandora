@@ -1,0 +1,10 @@
+<mat-card class="mat-card__tiles">
+    <div class="card__header">
+        <mat-icon *ngIf="widgetIcon"
+             [style.font-size]=" iconSize ? iconSize : '24px'">
+            {{widgetIcon}}
+        </mat-icon>
+        <mat-card-title>{{widgetTitle}}</mat-card-title>
+    </div>
+    <ng-content></ng-content>
+</mat-card>
