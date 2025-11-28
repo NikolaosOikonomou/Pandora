@@ -4,7 +4,7 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { GeneralModuleService } from './general-module.service';
+import { GeneralModuleService, ModuleData } from './general-module.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -15,8 +15,8 @@ import { CommonModule } from '@angular/common';
 })
 export class GeneralModuleComponent implements OnInit, AfterViewInit {
   
-  dataSource = new MatTableDataSource();
-  displayedColumns: string[] = ['namespace', 'name', 'status'];
+  dataSource = new MatTableDataSource<ModuleData>();
+  displayedColumns: string[] = ['namespace', 'name', 'ready', 'status', 'restarts', 'age'];
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -24,7 +24,7 @@ export class GeneralModuleComponent implements OnInit, AfterViewInit {
   constructor(private generModuleService: GeneralModuleService) { }
 
   ngOnInit(): void {
-    this.generModuleService.getModuleDataListener().subscribe(data => {
+    this.generModuleService.getModuleDataListener().subscribe((data: ModuleData[]) => {
       this.dataSource.data = data;
     });
     this.generModuleService.getModuleData();
